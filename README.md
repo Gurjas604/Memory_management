@@ -12,10 +12,12 @@ User need to specify the size of memory in `bytes` at the start of the program u
 User need to use `kalloc(_size_);` function to allocate memory. This function returns a pointer to the allocated block of size `_size_`
 
 #### Example Code 
-```int* p = (int*) kalloc(sizeof(int));
-if(p != NULL) {
-// do_some_work(p);
-kfree(p);
+```
+int* p = (int*) kalloc(sizeof(int));
+if(p != NULL) 
+{
+    // do_some_work(p);
+    kfree(p);
 }
 ```
 
