@@ -9,7 +9,10 @@ User need to specify the size of memory in `bytes` at the start of the program u
     * `WORST_FIT`: satisfies the allocation request from the available memory block that at least as large as the requested size and that results in the largest remainder fragment.
 
 ## Allocating Memory
-User need to use `kalloc(_size_);` function to allocate memory. This function returns a pointer to the allocated block of size `_size_`
+User need to use `kalloc(_size_);` function to allocate memory. This function returns a pointer to the allocated block of size `_size_`. If allocation fails then this function returns `NULL`. This function behaves similar to `malloc(_size_)`
+
+## Deallocating Memory
+User need to use `kfree(_Ptr_);` function to take away the ownership of the block pointed by `_ptr_`.  This function behaves similar to `free(_Ptr_);`
 
 #### Example Code 
 ```
