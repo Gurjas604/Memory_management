@@ -24,7 +24,7 @@ if(p != NULL)
 }
 ```
 ## Compacting Memory
-Contineous allocation and deallocation results in fragmentation of memory. This can be solved by the function `compact_allocation( _before_, _after_);`. This function relocated all the data and moves all the fragmeneted free blocks to the end of the memory. `_before_` and `_after_` are arrays of `void*` pointers. `compact_allocation` functions writes the before and after addresses of the relocated blocks into these arrays. It is users job to allocate these arrays enough memory to hold all the addresses of the allocated blocks that have been relocated. `compact_allocation` function returns an `int` value that represents the number of blocks that have been relocated.
+Continuous allocation and deallocation results in fragmentation of the memory. This can be solved by the function `compact_allocation( _before_, _after_);`. This function relocated all the data and moves all the fragmeneted free blocks to the end of the memory. `_before_` and `_after_` are arrays of `void*` pointers. `compact_allocation` functions writes the before and after addresses of the relocated blocks into these arrays. It is users job to allocate these arrays enough memory to hold all the addresses of the allocated blocks that have been relocated. `compact_allocation` function returns an `int` value that represents the number of blocks that have been relocated.
 ```
 void* before[100];
 void* after[100]; // in this example, total pointers is less than 100
