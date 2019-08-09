@@ -35,7 +35,7 @@ for(int i=0; i<count; ++i)
 }
 ```
 
-### Other Functionalities
+## Other Functionalities
 User can use `print_statistics();` to print out statistics about the current state of memory. Output would look as following:
 ```
 Allocated size = 40
