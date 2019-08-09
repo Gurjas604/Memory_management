@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
         //printf("p[%d] = %p ; *p[%d] = %d\n", i, p[i], i, *(p[i]));
     }
 
-    list_print();
+    //list_print();
     //print_statistics();
 
     for(int i=0; i<2500; ++i) {
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
     }
 
     p[1] = kalloc(8);
-    //list_print();
+    list_print();
     //kfree(p[2]);
 	//list_print();
     //printf("available_memory %d\n", available_memory());
